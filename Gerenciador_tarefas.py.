@@ -1,0 +1,17 @@
+
+hora = int(input("Que horas são agora? (Use apenas números de 0 a 23) : "))
+respostas= input("As tarefas estão prontas? (sim/não) : ").lower().strip()
+
+tarefas_prontas = respostas.replace("ã","a")
+
+if tarefas_prontas =="nao":
+
+    print("❌️ Bloqueado vá fazer as tarefas antes que escureça.")
+
+elif hora >= 22:
+
+    print("😴 Tá tarde! Tarefas feitas mas agora é hora de dormir.")
+
+
+else:
+    print ("✔️ Liberado! Pode codar ou jogar.")
